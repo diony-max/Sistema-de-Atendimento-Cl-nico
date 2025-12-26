@@ -1,0 +1,148 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema de Atendimento</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+       <div class="menu-fixo">
+    <button onclick="showScreen('totem')" class="botao-menu">Ver Totem</button>
+    
+    <button onclick="showScreen('reception')" class="botao-menu">Ver Recepção</button>
+    
+    <button onclick="showScreen('doctor')" class="botao-menu">Ver Médico</button>
+    
+    <button onclick="showScreen('records')" class="botao-menu">Ver Prontuários</button>
+</div>
+        
+        <div class="container" id="totem-screen">
+            <div class="header">
+                <h1>Sistema de Atendimento Clinico</h1>
+                <p>Sua Saúde, Nossa Prioridade</p>
+            </div>
+
+             <div id="relogio-container">
+            Data e Hora Atual: <span id="current-time-display"></span>
+             </div>
+
+            <div class="welcome-message">
+                <p>Seja bem-vindo(a) ao Sistema de Atendimento Clinico!</p>
+                <p>Escolha uma das opções abaixo para emissão da senha.</p>
+            </div>
+            <div class="button-grid">
+                <button class="button" data-type="emergencia">Emergência</button>
+                <button class="button" data-type="consulta">Consulta</button>
+                <button class="button" data-type="urgencia">Urgência</button>
+                <button class="button" data-type="marcacao">Marcação de Consulta e Exames</button>
+                </div>
+            <div class="ticket-display" id="ticket-display">
+                Aguarde sua senha...
+            </div>
+        </div> 
+
+        <div class="container hidden" id="reception-screen">
+            <h2>Recepção</h2>
+            <div class="panel">
+                <h3>Painel de Chamada</h3>
+                <p>Próxima Senha: <span id="next-password-display">---</span></p>
+                <p>Senha Chamada: <span id="called-password-display">---</span></p>
+                <button id="call-next-password-btn">Chamar Próxima Senha</button>
+                <div id="reception-message" class="message hidden"></div>
+            </div>
+            <div class="patient-form-section">
+                <h3>Cadastro do Paciente</h3>
+                <form id="patient-registration-form">
+                    <label for="patient-name">Nome Completo:</label>
+                    <input type="text" id="patient-name" required>
+
+                    <label for="patient-phone">Telefone:</label>
+                    <input type="tel" id="patient-phone">
+
+                    <label for="patient-address">Endereço:</label>
+                    <input type="text" id="patient-address">
+
+                    <label for="patient-cpf">CPF:</label>
+                    <input type="text" id="patient-cpf">
+
+                    <label for="patient-symptoms">Sintomas (Breve descrição):</label>
+                    <textarea id="patient-symptoms"></textarea>
+
+                    <button type="submit">Cadastrar Paciente</button>
+                </form>
+            </div>
+        </div> 
+
+        <div class="container hidden" id="doctor-screen">
+            <h2>Consultório Médico</h2>
+            <div class="patient-list-section">
+                <h3>Pacientes Aguardando</h3>
+                <ul id="patient-list-doctor">
+                    <li>Nenhum paciente aguardando.</li>
+                </ul>
+            </div>
+            <div class="current-patient-details hidden" id="current-patient-details-doctor">
+                <h3>Detalhes do Paciente Selecionado</h3>
+                <p>Nome: <span id="current-patient-name-doctor"></span></p>
+                <p>Telefone: <span id="current-patient-phone-doctor"></span></p>
+                <p>Endereço: <span id="current-patient-address-doctor"></span></p>
+                <p>CPF: <span id="current-patient-cpf-doctor"></span></p>
+                <p>Sintomas: <span id="current-patient-symptoms-doctor"></span></p>
+                <button id="attend-patient-btn">Atender Paciente</button>
+            </div>
+            <div class="medical-record-section hidden" id="medical-record-form">
+                <h3>Prontuário Médico</h3>
+                <form id="record-form">
+                    <label for="diagnosis">Diagnóstico:</label>
+                    <textarea id="diagnosis" rows="5"></textarea>
+
+                    <label for="treatment">Tratamento:</label>
+                    <textarea id="treatment" rows="5"></textarea>
+
+                    <label for="observation">Observações:</label>
+                    <textarea id="observation" rows="5"></textarea>
+
+                    <button type="submit">Salvar Prontuário</button>
+                    </form>
+            </div>
+        </div>
+
+        <div class="container hidden" id="records-screen">
+            <h2>Consulta de Prontuários</h2>
+            <div class="search-section">
+                <label for="search-patient-name">Pesquisar Paciente (Nome ou CPF):</label>
+                <input type="text" id="search-patient-name" placeholder="Digite o nome ou CPF do paciente">
+                <button id="search-patient-btn">Pesquisar</button>
+            </div>
+            <div class="search-results">
+                <h3>Resultados da Pesquisa:</h3>
+                <ul id="patient-search-list">
+                    <li>Nenhum paciente encontrado.</li>
+                </ul>
+            </div>
+            <div class="patient-record-details hidden" id="selected-record-details">
+                <h3>Prontuário de <span id="record-patient-name"></span></h3>
+                <p><strong>CPF:</strong> <span id="record-patient-cpf"></span></p>
+                <p><strong>Telefone:</strong> <span id="record-patient-phone"></span></p>
+                <p><strong>Endereço:</strong> <span id="record-patient-address"></span></p>
+                <p><strong>Sintomas na Chegada:</strong> <span id="record-patient-symptoms"></span></p>
+
+                <h4>Diagnóstico:</h4>
+                <p id="record-diagnosis">N/A</p>
+
+                <h4>Tratamento:</h4>
+                <p id="record-treatment">N/A</p>
+
+                <h4>Observações:</h4>
+                <p id="record-observation">N/A</p>
+
+                <button id="print-found-record-btn">Imprimir Prontuário</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+    </html>
