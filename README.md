@@ -1,31 +1,22 @@
 # 🏥 Sistema de Atendimento Clínico
 
-Sistema de atendimento clínico desenvolvido para uso local, com foco em organização de pacientes, controle de senhas e prontuários médicos.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
 
-## 📌 Funcionalidades
-- Geração de senha para pacientes
-- Tela de recepção para cadastro
-- Painel de chamada
-- Tela do médico para atendimento
-- Cadastro e visualização de prontuários
-- Impressão de prontuários
-- Armazenamento local (sem banco de dados)
+Um sistema completo de gerenciamento de atendimentos desenvolvido com tecnologias web modernas. O foco deste projeto é a organização de fluxos de trabalho e a criação de uma interface intuitiva para o usuário.
+
+## 🚀 Funcionalidades
+* Interface responsiva para gestão de pacientes.
+* Lógica de prioridade e ordem de chegada.
+* Design limpo e organizado.
 
 ## 🛠️ Tecnologias Utilizadas
-- Python
-- HTML
-- CSS
-- JavaScript
-- Armazenamento local (JSON / LocalStorage)
+* **HTML5**: Estruturação semântica do conteúdo.
+* **CSS3**: Estilização e layout responsivo.
+* **JavaScript**: Lógica de funcionamento e interatividade.
 
-## 🎯 Objetivo do Projeto
-Criar um sistema simples, funcional e fácil de executar em qualquer computador, ideal para clínicas de pequeno porte ou uso acadêmico.
-
-## ▶️ Como Executar o Projeto
-1. Baixe ou clone o repositório
-2. Abra os arquivos conforme a tecnologia utilizada
-3. Execute localmente (não necessita banco de dados)
-
-## 👨‍💻 Desenvolvedor
-**Diony**  
+## ✒️ Desenvolvido por
+[Diony Max](https://www.linkedin.com/in/diony-willker-f-232997241/)
 Projeto desenvolvido para estudo e portfólio profissional.
