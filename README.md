@@ -14,11 +14,7 @@ Relatórios: Visualização de atendimentos realizados.
 🛠️ Tecnologias Utilizadas
 HTML5 - Lógica principal. 
 JavaScript  & CSS3 - Estrutura e estilização.
-
- & CSS3 - Estrutura e estilização.
-## 👨‍💻 Desenvolvido por
+& CSS3 - Estrutura e estilização.
 ## 👨‍💻 Desenvolvido por
 
 [**Diony Max**](https://www.linkedin.com/in/diony-willker-f-23997241/)
-
-
