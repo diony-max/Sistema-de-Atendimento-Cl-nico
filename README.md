@@ -15,6 +15,6 @@ Interface moderna e funcional para gestão de fluxos hospitalares, focada em usa
 * ---
 
 ## 👨‍💻 Desenvolvido por
-[**Diony Max**](https://www.linkedin.com/in/diony-willker-f-23997241/)
+[Diony Max**](https://www.linkedin.com/in/diony-willker-f-23997241/)
 
 ---
