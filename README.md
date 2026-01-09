@@ -14,4 +14,4 @@ Este é um sistema desenvolvido em JavaScript para gerenciar o fluxo de atendime
 * **JavaScript & CSS3** - Lógica principal e estilização.
 
 ## 👨‍💻 Desenvolvido por
-[**Diony Max**](https://www.linkedin.com/in/diony-willker-f-23997241/)
+DESENVOLVIDO POR [Diony Max](https://www.linkedin.com/in/diony-willker-f-232997241/)
